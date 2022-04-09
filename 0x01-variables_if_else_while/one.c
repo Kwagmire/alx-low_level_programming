@@ -1,6 +1,17 @@
 #include <stdio.h>
 
 int main(void) {
-	printf("%d\n",(5 + 5));
+	char c;
+
+
+	c = 'a';
+
+
+
+	while (c <= 'z') {
+		putchar(c);
+		c++;
+	}
+
 	return (0);
 }
