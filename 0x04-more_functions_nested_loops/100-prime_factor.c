@@ -14,7 +14,7 @@ int main(void)
 	int count;
 	int n;
 
-	int number = 612852475143;
+	long number = 612852475143;
 
 	for (count = 2; count <= number; count++)
 	{
