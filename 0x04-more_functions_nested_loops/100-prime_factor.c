@@ -8,11 +8,11 @@
 
 int main(void)
 {
-	int factor;
-	int largest;
-	int prime;
-	int count;
-	int n;
+	long factor;
+	long largest;
+	long prime;
+	long count;
+	long n;
 
 	long number = 612852475143;
 
@@ -36,7 +36,7 @@ int main(void)
 		}
 	}
 
-	printf("%d\n", largest);
+	printf("%ld\n", largest);
 
 	return (0);
 }
