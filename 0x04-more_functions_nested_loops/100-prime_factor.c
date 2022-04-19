@@ -8,13 +8,8 @@
 
 int main(void)
 {
-	long factor;
-	long largest;
-	long prime;
-	long count;
-	long n;
-
-	long number = 612852475143;
+	unsigned long factor, largest, prime, count, n;
+	unsigned long number = 612852475143;
 
 	for (count = 2; count <= number; count++)
 	{
@@ -36,7 +31,7 @@ int main(void)
 		}
 	}
 
-	printf("%ld\n", largest);
+	printf("%lu\n", largest);
 
 	return (0);
 }
