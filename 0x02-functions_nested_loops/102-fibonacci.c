@@ -9,20 +9,20 @@
 
 int main(void)
 {
-	int i, c, d, number;
+	long long int i, c, d, number;
 
 	c = 1;
 	d = 2;
 
-	printf("%d, %d", c, d);
+	printf("%lld, %lld", c, d);
 
 	for (i = 1; i < 25; i++)
 	{
 		number = c + d;
-		printf(", %d", number);
+		printf(", %lld", number);
 		c = number;
 		number = c + d;
-		printf(", %d", number);
+		printf(", %lld", number);
 		d = number;
 	}
 	printf("\n");
