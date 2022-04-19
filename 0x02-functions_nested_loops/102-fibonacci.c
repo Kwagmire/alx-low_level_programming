@@ -9,20 +9,21 @@
 
 int main(void)
 {
-	long long int i, c, d, number;
+	unsigned long c, d, number;
+	int i;
 
 	c = 1;
 	d = 2;
 
-	printf("%lld, %lld", c, d);
+	printf("%lu, %lu", c, d);
 
 	for (i = 1; i < 25; i++)
 	{
 		number = c + d;
-		printf(", %lld", number);
+		printf(", %lu", number);
 		c = number;
 		number = c + d;
-		printf(", %lld", number);
+		printf(", %lu", number);
 		d = number;
 	}
 	printf("\n");
