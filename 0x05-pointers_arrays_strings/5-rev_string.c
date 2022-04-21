@@ -14,7 +14,7 @@ void rev_string(char *s)
 	{
 		len++;
 	}
-	char reverse[len];
+	char *reverse;
 
 	for (; len >= 1; len--)
 	{
