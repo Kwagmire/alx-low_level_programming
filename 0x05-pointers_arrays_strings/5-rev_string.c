@@ -8,21 +8,21 @@
 
 void rev_string(char *s)
 {
+	char *rev;
 	int len = 0, i, j;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		len++;
 	}
-	char *reverse;
 
 	for (; len >= 1; len--)
 	{
-		reverse[i - (len - 1)] = s[len - 1];
+		rev[i - (len - 1)] = s[len - 1];
 	}
 
 	for (j = 0; j < i; j++)
 	{
-		s[j] = reverse[j];
+		s[j] = rev[j];
 	}
 }
