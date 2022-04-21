@@ -18,8 +18,8 @@ void rev_string(char *s)
 
 	for (; len > i / 2; len--)
 	{
-		tmp = s[i - len]
+		tmp = s[i - len];
 		s[i - len] = s[len - 1];
-		s[len - 1] = tmp
+		s[len - 1] = tmp;
 	}
 }
