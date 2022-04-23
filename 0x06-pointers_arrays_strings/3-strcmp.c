@@ -12,18 +12,9 @@ int _strcmp(char *s1, char *s2)
 {
 	int i, diff;
 
-	for (i = 0; s1[i] == s2[i]; i++)
-	{
-		if (s1[i] == '\0')
-			break;
-	}
-	
-	if (s2[i] > s1[i])
-	{
-		diff = s2[i] - s1[i];
-		return (-diff);
-	}
-	else
-		diff = s1[i] - s2[i];
-		return (diff);
+	for (i = 0; s1[i] && s2[i] & s1[i] == s2[i]; i++)
+		;
+
+	diff = s1[i] - s2[i];
+	return (diff);
 }
