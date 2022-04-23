@@ -8,7 +8,7 @@
  * Return: the integer difference between the last compared bytes
  */
 
-int *_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int i, diff;
 
