@@ -12,7 +12,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int destIndex, src_len, i;
+	int destIndex, src_len, i, j;
 
 	for (destIndex = 0; dest[destIndex] != '\0';)
 	{
@@ -35,9 +35,9 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	else if (src_len > 0 && n < src_len)
 	{
-		for (i = 0; i < n; i++)
+		for (j = 0; j < n; j++)
 		{
-			dest[destIndex] = src[i];
+			dest[destIndex] = src[j];
 			destIndex++;
 		}
 
