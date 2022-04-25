@@ -31,7 +31,7 @@ char *rot13(char *str)
 				i++;
 				continue;
 			}
-			
+
 			str[i] = str[i] + 13;
 			i++;
 		}
