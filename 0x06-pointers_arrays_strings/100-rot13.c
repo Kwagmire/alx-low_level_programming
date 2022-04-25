@@ -26,9 +26,13 @@ char *rot13(char *str)
 					(str[i] >= 'N' &&
 					 str[i] <= 'Z')
 			   )
+			{
 				str[i] = str[i] - 13;
-			else
-				str[i] = str[i] + 13;
+				i++;
+				continue;
+			}
+			
+			str[i] = str[i] + 13;
 			i++;
 		}
 
