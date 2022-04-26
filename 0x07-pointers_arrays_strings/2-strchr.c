@@ -12,7 +12,6 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int i = 0;
-	char *p = NULL;
 
 	while (s[i])
 	{
@@ -25,5 +24,5 @@ char *_strchr(char *s, char c)
 	if (s[i])
 		return (s + i);
 
-	return (p);
+	return ('\0');
 }
