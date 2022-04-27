@@ -11,6 +11,8 @@
 
 char *_strstr(char *haystack, char *needle)
 {
+	unsigned int i;
+
 	while (*haystack)
 	{
 		for (i = 0; *(haystack + i) == *(needle + i); i++)
