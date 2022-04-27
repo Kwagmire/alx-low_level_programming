@@ -9,7 +9,7 @@
  * or null if no byte is found
  */
 
-unsigned int *_strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j;
 
