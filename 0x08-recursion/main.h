@@ -9,3 +9,5 @@ int is_prime_number(int n);
 int further_div(int j, int k);
 int find_sqrt(int a);
 int _sqrt_recursion(int n);
+int check_palindrome(char *s, int i, int n);
+int is_palindrome(char *s);
