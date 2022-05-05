@@ -28,5 +28,5 @@ char *_strdup(char *str)
 
 	dupl[i] = '\0';
 
-	return (dup);
+	return (dupl);
 }
