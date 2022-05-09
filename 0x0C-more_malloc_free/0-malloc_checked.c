@@ -9,7 +9,7 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	if (malloc(b) == NULL)
+	if (b == 0 || malloc(b) == NULL)
 		exit(98);
 	else
 		return (malloc(b));
