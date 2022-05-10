@@ -14,6 +14,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *ptr2;
 	unsigned int i, size;
+	char *filler, *source;
 
 	if (ptr == NULL)
 	{
@@ -38,14 +39,12 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	else
 		size = old_size;
 
-	char *filler;
-	char *source;
-
 	filler = ptr2;
 	source = ptr;
 
 	for (i = 0; i < size; i++)
 		filler[i] = source[i];
 
+	free(ptr);
 	return (ptr2);
 }
