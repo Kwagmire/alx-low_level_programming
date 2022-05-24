@@ -29,19 +29,20 @@ list_t *add_node_end(list_t **head, const char *str)
 	for (len = 0; str[len];)
 		len++;
 
-	traverse = *head;
-	while (traverse)
-	{
-		if (traverse->next == NULL)
-			break;
-		traverse = traverse->next;
-	}
-
 	new->str = dup;
 	new->len = len;
 	new->next = NULL;
 
-	traverse->next = new;
+	if (*head == NULL)
+		*head = new;
+	else
+	{
+		traverse = *head;
+		while (traverse->next != NULL)
+			traverse = traverse->next;
+	
+		traverse->next = new
+	}
 
-	return (*head);
+	return (new);
 }
