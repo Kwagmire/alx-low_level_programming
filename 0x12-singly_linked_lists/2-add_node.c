@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <strings.h>
+#include <string.h>
 
 /**
  * add_node - add a new node at the beginning of the list
