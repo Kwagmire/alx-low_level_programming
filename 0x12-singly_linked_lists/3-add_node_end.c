@@ -40,8 +40,8 @@ list_t *add_node_end(list_t **head, const char *str)
 		traverse = *head;
 		while (traverse->next != NULL)
 			traverse = traverse->next;
-	
-		traverse->next = new
+
+		traverse->next = new;
 	}
 
 	return (new);
