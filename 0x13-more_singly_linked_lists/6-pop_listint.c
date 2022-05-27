@@ -11,7 +11,7 @@ int pop_listint(listint_t **head)
 	listint_t *temp;
 	int n;
 
-	if (temp == NULL)
+	if (head == NULL)
 		return (-1);
 
 	temp = *head;
