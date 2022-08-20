@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * delete_dnodeint_at_index - Delete node at specific index of
+ * deleteodeint_at_index - Delete node at specific index of
  * a dlistint_t list
  *
  * @head: address of the head of the list
@@ -33,10 +33,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	while (count < index)
 	{
 		if (iter == NULL)
-		{
-			free(new);
 			return (-1);
-		}
 		before = iter;
 		iter = iter->next;
 		count++;
