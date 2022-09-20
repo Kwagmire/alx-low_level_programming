@@ -1,0 +1,6 @@
+SRCS:= $(wildcard *.c)
+
+all: school
+
+%: %.c
+	gcc ${SRCS} -o $@ 
