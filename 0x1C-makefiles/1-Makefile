@@ -6,4 +6,4 @@ CC := gcc
 all: school
 
 %: %.c
-	gcc ${SRC} -o $@ 
+	${CC} ${SRC} -o $@ 
