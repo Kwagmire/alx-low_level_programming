@@ -1,9 +1,9 @@
 .PHONY = all
 
-SRC = $(wildcard *.c)
+SRC = main.c school.c
 CC = gcc
 
 all: school
 
-%: %.c
+%: $(SRC)
 	$(CC) $(SRC) -o $@ 
